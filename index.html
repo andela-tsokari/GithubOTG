@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html ng-app="">
+<html ng-app="GithubOTG">
 <head>
-  <title>New Project</title>
+  <title>GithubOTG</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" type="text/css" href="assets/css/app.css" />
   <link rel="stylesheet" type="text/css" href="libs/angular-material/angular-material.min.css" />
 </head>
 <body>
+  <md-toolbar>
+    <md-input-container id="search">
+      <label>Search Github</label>
+      <input type="search">
+    </md-input-container>
+  </md-toolbar>
+  <md-sidenav class="md-sidenav-left">
 
+  </md-sidenav>
+  <md-input-container
+    <md-button>
+      Sign In to Github
+    </md-button>
+  </a>
 
+  <!--library files-->
   <script type="text/javascript" src="libs/angular/angular.min.js"></script>
-  <script type="text/javascript" src="libs/angular-material/angular-material.min.js"></script>
   <script type="text/javascript" src="libs/angular-animate/angular-animate.min.js"></script>
   <script type="text/javascript" src="libs/angular-aria/angular-aria.min.js"></script>
+  <script type="text/javascript" src="libs/angular-material/angular-material.min.js"></script>
   <script type="text/javascript" src="libs/angular-route/angular-route.min.js"></script>
+
+  <!--modules-->
+  <script type="text/javascript" src="app/app.js"></script>
+
+  <!--controllers-->
+  <script type="text/javascript" src="app/sign-in/controllers/sign-in.controller.js"></script>
+
 </body>
 </html>
