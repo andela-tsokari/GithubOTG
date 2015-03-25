@@ -1,7 +1,7 @@
 {
-  "name": "newProject",
+  "name": "GithubOTG",
   "version": "1.0.0",
-  "description": "new project that i will edit this for",
+  "description": "GithubOTG is an application to manage user profiles and repositories on git.",
   "main": "index.js",
   "directories": {
     "test": "tests"
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/andela-tsokari/newProject"
+    "url": "https://github.com/andela-tsokari/GithubOTG"
   },
   "keywords": [
     "project"
@@ -30,7 +30,7 @@
   "author": "Tams Sokari",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andela-tsokari/newProject/issues"
+    "url": "https://github.com/andela-tsokari/GithubOTG/issues"
   },
-  "homepage": "https://github.com/andela-tsokari/newProject"
+  "homepage": "https://github.com/andela-tsokari/GithubOTG"
 }

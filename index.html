@@ -3,24 +3,26 @@
 <head>
   <title>GithubOTG</title>
   <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="assets/css/app.css" />
   <link rel="stylesheet" type="text/css" href="libs/angular-material/angular-material.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/app.css" />
 </head>
 <body>
   <md-toolbar>
-    <md-input-container id="search">
-      <label>Search Github</label>
-      <input type="search">
-    </md-input-container>
+    <section layout="row" layout-wrap>
+      <section flex="25">
+        <md-input-container class="md-toolbar-tools">
+          <input type="search" >
+        </md-input-container>
+      </section>
+      <section flex="50">
+        <h3 class="md-toolbar-tools">GithubOTG</h3>
+      </section>
+      <section flex="25" ng-controller="LoginCtrl as login">
+        <!--a href="https://github.com/login/oauth/authorize?scope=user,public_repo&client_id=bb19076da6648f2fa39c">Click here</a-->
+        <md-button class="md-toolbar-tools" ng-click="login.authenticate('github')">Sign in with Github</md-button>
+      </section>
+    </section>
   </md-toolbar>
-  <md-sidenav class="md-sidenav-left">
-
-  </md-sidenav>
-  <md-input-container
-    <md-button>
-      Sign In to Github
-    </md-button>
-  </a>
 
   <!--library files-->
   <script type="text/javascript" src="libs/angular/angular.min.js"></script>
@@ -28,6 +30,7 @@
   <script type="text/javascript" src="libs/angular-aria/angular-aria.min.js"></script>
   <script type="text/javascript" src="libs/angular-material/angular-material.min.js"></script>
   <script type="text/javascript" src="libs/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="libs/satellizer/satellizer.js"></script>
 
   <!--modules-->
   <script type="text/javascript" src="app/app.js"></script>
